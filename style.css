@@ -66,29 +66,242 @@ a {
     min-height: calc(100vh - 55px); 
     display: flex;
     align-items: center;
+    
 }
 
 .section-home-item {
     flex-grow: 1;
     font-family: 'Poppins', sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     color: #42446e;
     display: flex;
     justify-content: space-between;
-    
+      
     
 }
+
+
 
 .my-name {
     color: #cd237e;
+    
 }
 
 .profile-img {
+   
     width: 350px;
     border-radius: 50%;
-    background:#cd237e;
     padding: 10px;
-
-
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(205,35,126,1) 100%);
 }
 
+/*==========================About==================*/
+
+.section-about {
+    font-family: 'Poppins', sans-serif;
+    /* 100vh - tamanho header */
+    min-height: calc(100vh - 55px);
+    width: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-about-work-item {
+    height: 75px;
+    border-bottom: 2px solid lightgray;
+}
+
+.section-about-work-item-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.section-about-work-item-content {
+    display: flex;
+}
+
+.section-about h1 {
+    font-size: 36px;
+    color: #42446e;
+    margin: 32px 0;
+}
+
+.section-about h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+
+html body .section-about-time-tag { /* Just to add selector priority */
+    color: #018c0f;
+    background-color: #d7ffe0;
+    border-radius: 20px;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 4px 8px 0px rgba(102,102,102,1);
+}
+
+.section-about p {
+    font-size: 18px;
+    color: #666666;
+}
+
+.section-about span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #a7a7a7;
+}
+
+.content-work {
+    width: 250px;
+}
+
+.content-data {
+    margin-left: auto;
+}
+/*tech//////////////////////////////////////////////////////////*/
+
+
+.section-stack {
+    font-family: 'Poppins', sans-serif;
+    min-height: calc(100vh - 55px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.section-stack h1 {
+    font-size: 36px;
+    color: #42446e;
+    margin: 32px 0;
+}
+
+.section-stack p {
+    font-size: 18px;
+    color: #666666;
+}
+
+.section-stack-icons {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+
+/*projetos*/
+
+.section-projects {
+    font-family: 'Poppins', sans-serif;
+    /* 100vh - tamanho header */
+    min-height: calc(100vh - 55px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-projects-intro {
+    margin-bottom: 100px;
+}
+
+.section-projects h1 {
+    font-size: 36px;
+    color: #42446e;
+    margin: 32px 0;
+}
+
+.section-projects p {
+    font-size: 18px;
+    color: #666666;
+}
+
+.section-projects-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    overflow: hidden;
+    width: 375px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 48px;
+    box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.project-card-content {
+    padding: 24px;
+    padding-bottom: calc(24px - 7px);
+    transform: translateY(-7px);
+}
+
+.project-card h2 {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 8px 0;
+}
+
+.project-card p {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.project-card-content .project-card-content-stacks {
+    color: #42446e;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.project-card-content-stacks span {
+    font-weight: 400;
+}
+
+.project-card-links {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: underline;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card-links a {
+    display: flex;
+    align-items: center;
+}
+
+.project-card-links a img {
+    margin-right: 10px;
+}
+
+
+
+/*contato*/
+
+.section-contato{
+    font-size: 22px;
+    color: #42446e;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.section-contato a{
+    color:  #cd237e; 
+    animation: effect linear 1s;
+}
